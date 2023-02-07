@@ -3,11 +3,11 @@
 /* SIDE BAR */
 
 :root {
-    --bg-black-900: #f2f2fc;
-    --bg-black-100: #fdf9ff;
-    --bg-black-50: #474548;
-    --text-black-900: #302e4d;
-    --text-black-700: #504e70;
+    --bg-black-900: #000000f8;
+    --bg-black-100: #161418;
+    --bg-black-50: #38333b;
+    --text-black-900: #ffffff;
+    --text-black-700: #fffffff0;
 }
 
 body {
@@ -54,15 +54,50 @@ ul {
     padding-right: 15px;
 }
 
-.section .container {
-    
-}
-
 .container {
     max-width: 1100px;
     width: 100%;
     /* background: var(--skin-color); */
     margin: auto;
+}
+
+.section .container {
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+
+.section-title {
+    flex: 0 0 100%;
+    max-width: 100%;
+    /* background: var(--skin-color); */
+}
+
+.section-title h2 {
+    font-size: 40px;
+    color: var(--text-black-900);
+    font-weight: 700;
+    position: relative;
+}
+
+.section-title h2::before {
+    content: '';
+    height: 4px;
+    width: 50px;
+    background-color: var(--skin-color);
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.section-title h2::after {
+    content: '';
+    height: 4px;
+    width: 25px;
+    background-color: var(--skin-color);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 8px;
 }
 
 .row {
@@ -290,7 +325,34 @@ h3.my-profession {
 }
 
 .home .home-img img {
-    margin:  auto;
+    margin: auto;
     border-radius: 5px;
     height: 400px;
+}
+
+/* Responsive */
+
+@media (max-width: 1199px) {
+    .aside {
+        width: 200px;
+    }
+    .main-content {
+        padding-left: 200px;
+    }
+    p span {
+        display: block;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 991px) {
+
+    .home .home-info {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .home .home-img {
+        display: none;
+    }
 }
