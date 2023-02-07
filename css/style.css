@@ -41,6 +41,10 @@ ul {
     opacity: 1;
 }
 
+.hidden {
+    display: none !important;
+}
+
 .main-content {
     padding-left: 270px;
 }
@@ -48,6 +52,10 @@ ul {
 .padd-15 {
     padding-left: 15px;
     padding-right: 15px;
+}
+
+.section .container {
+    
 }
 
 .container {
@@ -277,8 +285,8 @@ h3.my-profession {
     width: 80px;
     border-top: 10px solid var(--skin-color);
     border-left: 10px solid var(--skin-color);
-    left: -20px;
-    top: 40px;
+    left: 20px;
+    top: -40px;
 }
 
 .home .home-img img {
