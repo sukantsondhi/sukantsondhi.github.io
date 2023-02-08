@@ -27,9 +27,7 @@
 
         <ul class="nav">
           <li>
-            <a href="./index.html" class="active">
-              <i class="fa fa-home"></i>Home</a
-            >
+            <a href="#home" class="active"> <i class="fa fa-home"></i>Home</a>
           </li>
 
           <li>
@@ -43,6 +41,11 @@
               <i class="fa fa-download"></i>Resumé
             </a>
           </li>
+          <li>
+            <a href="#contact" class="active">
+              <i class="fa fa-envelope"></i>Contact Me
+            </a>
+          </li>
         </ul>
       </div>
       <!-- Aside END -->
@@ -50,16 +53,14 @@
       <!-- Main Content START -->
       <div class="main-content">
         <!-- Home Section START -->
-        <section class="home active section">
+        <section class="home active section" id="home">
           <div class="container">
             <div class="row">
               <div class="home-info padd-15">
                 <h3 class="hello">
                   Hi! my name is <span class="name">Sukant Sondhi</span>
                 </h3>
-                <h3 class="my-profession">
-                  I'm <span class="typing"></span>
-                </h3>
+                <h3 class="my-profession">I'm <span class="typing"></span></h3>
                 <p>
                   I'm an enthusiastic undergraduate student with advanced skills
                   in leadership, Computer Science and team building. A polished
@@ -84,6 +85,53 @@
         </section>
 
         <!-- Home Section END -->
+
+        <!-- Contact Me Section START -->
+
+        <section class="contact section" id="contact">
+          <div class="container">
+            <div class="row">
+              <div class="section-title pass-15">
+                <h2>Contact Me</h2>
+              </div>
+            </div>
+            <h2 class="contact-title">Any Questions ?</h2>
+            <h4 class="contact-sub-title">Reach Out to me via any of these!</h4>
+
+            <a
+              href="https://www.linkedin.com/in/sukantsondhi/"
+              target="_blank"
+              class="btn linkedin"
+            >
+              <i class="fa fa-linkedin-square"></i> LinkedIn
+            </a>
+            <a
+              href="https://www.linkedin.com/in/sukantsondhi/"
+              target="_blank"
+              class="btn linkedin"
+            >
+              <i class="fa fa-instagram"></i> Instagram
+            </a>
+            <a
+              href="https://www.linkedin.com/in/sukantsondhi/"
+              target="_blank"
+              class="btn linkedin"
+            >
+              <i class="fa fa-github"></i> GitHub
+            </a>
+            <form
+              action="mailto:sukant.st@gmail.com"
+              method="post"
+              enctype="multipart/form-data"
+            >
+              <button type="submit" class="btn linkedin">
+                <a target="_blank"> <i class="fa fa-envelope"></i> Email </a>
+              </button>
+            </form>
+          </div>
+        </section>
+
+        <!-- Contact Me Section END -->
 
         <!-- Main Content END -->
       </div>
