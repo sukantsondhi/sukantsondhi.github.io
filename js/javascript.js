@@ -7,7 +7,7 @@ var typed = new Typed(".typing", {
     loop: true
 })
 
-// Asside
+// Aside
 
 const nav = document.querySelector(".nav"),
     navList = nav.querySelectorAll("li"),
